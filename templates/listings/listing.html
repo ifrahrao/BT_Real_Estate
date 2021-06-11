@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% load humanize %}
 {% load static %}
+{% block title %}
+| {{ listing.title }}
+{% endblock %}
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
 
